@@ -1,0 +1,85 @@
+body {
+
+    font-family: monospace;
+}
+
+ul {
+
+    font-family: helvetica;   
+
+}
+
+li {
+
+list-style: circle;
+
+}
+
+.list {
+
+list-style: square;
+
+}
+
+#msg {
+
+font-family: monospace;
+
+}
+
+:root {
+    --green: #00FF00;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+.light-theme {
+    --bg: var(--green);
+    --fontColor: var(--black);
+}  
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
+}
+
+* {
+    color: var(--fontColor);
+    font-family: helvetica;
+}
+
+body {
+    background: var(--bg);
+}
+
+.btn{
+    color: var(--btnFontColor);
+    background: var(--btnBg);
+}
+
+.btn{
+    position: absolute;
+    top: 200px;
+    left: 50px;   
+    height: 50px;
+    width: 50px;  
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background: var(--btnBg);
+}
+.btn:focus {
+    outline-style: none;
+}
+
+.light-theme .btn {
+    --bg: var(--green);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+}
+
+.dark-theme .btn {
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --btnBg: var(--green);
+    --btnFontColor: var(--black);
+}
